@@ -1,25 +1,23 @@
 # Excel Record Viewer — Offline Excel & CSV Viewer
 
-**Open, edit and export Excel (.xlsx/.xls) and CSV files entirely in your browser.**  
-No upload — files remain on your device. Great for messy spreadsheets: form view, inline editing, column selector and export.
+Open, view, edit and export Excel (.xlsx/.xls) and CSV files **directly in your browser**.  
+No uploads — your file stays on your device.
+
+🔗 **Try the App:** https://apps.uol.ac.in
+
+🎥 **Promo Video:** https://youtu.be/5J5ck--j1RI
 
 ## Features
-- Client-side XLSX/CSV viewing & editing (no upload)
-- Form view for readable record display
-- Inline table editing and add-record form
-- Select visible columns & export updated file to XLSX/CSV
-- PWA installable — works offline
+- View Excel/XLSX/CSV
+- Form view for clean reading of messy sheets
+- Inline table editing
+- Add new records form
+- Column selector (show/hide fields)
+- Export to Excel or CSV
+- 100% client-side (privacy protected)
+- Installable PWA (works offline)
 
-## Try the app
-https://apps.uol.ac.in
+## About
+This repository hosts documentation and promo material for **Excel Record Viewer**, developed at the University of Ladakh.
 
-## Promo video
-Unlisted YouTube: https://youtu.be/5J5ck--j1RI
-
-## Contribute
-Open issues & PRs — suggestions welcome.
-
----
-
-**Author:** Gulzar Hussain, Sr. Technical Assistant  
-**License:** MIT
+Author: **Gulzar Hussain**
