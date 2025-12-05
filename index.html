@@ -2,48 +2,184 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Excel Record Viewer — Offline Excel/CSV Viewer (No Upload)</title>
-  <meta name="description" content="Open, view, edit and export XLSX/CSV files directly in your browser — no upload, works offline. Ideal for messy spreadsheets with form view.">
-  <meta property="og:title" content="Excel Record Viewer — Offline Excel/CSV Viewer">
-  <meta property="og:description" content="View, edit and export Excel files inside your browser. No upload needed.">
-  <meta property="og:image" content="https://apps.uol.ac.in/assets/icons/icon-512.png">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Excel Record Viewer — Fast, Offline Excel & CSV Viewer (No Upload)</title>
+  <meta name="description"
+    content="Excel Record Viewer: open, edit and export Excel / CSV files fully in your browser. Fast form view, table view, inline editing — 100% client-side. No uploads." />
+  <meta name="keywords" content="Excel viewer, CSV viewer, XLSX viewer, offline excel, client-side excel" />
+  <link rel="canonical" href="https://apps.uol.ac.in/" />
 
-  <!-- Structured Data -->
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Excel Record Viewer — Fast, Offline Excel & CSV Viewer"/>
+  <meta property="og:description" content="Open, edit and export Excel/CSV files entirely in your browser. No upload — privacy first."/>
+  <meta property="og:image" content="https://apps.uol.ac.in/assets/icons/icon-512.png"/>
+  <meta property="og:url" content="https://apps.uol.ac.in/"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+
+  <!-- Preconnect + preload -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured data: SoftwareApplication + VideoObject + WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Excel Record Viewer",
-    "operatingSystem": "Web",
-    "applicationCategory": "BusinessApplication",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-    "url": "https://apps.uol.ac.in/",
-    "image": "https://apps.uol.ac.in/assets/icons/icon-512.png",
-    "description": "A fast offline Excel/CSV viewer & editor that works entirely inside your browser. No upload required."
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://apps.uol.ac.in/#software",
+        "name": "Excel Record Viewer",
+        "description": "Open, edit and export Excel (.xlsx/.xls) and CSV files fully in your browser. 100% client-side, privacy-first.",
+        "url": "https://apps.uol.ac.in/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "author": {
+          "@type": "Person",
+          "name": "Gulzar Hussain"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://apps.uol.ac.in/#promoVideo",
+        "name": "Excel Record Viewer — Demo",
+        "description": "Short demo showing form view, table view and inline editing — all client-side.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/5J5ck--j1RI/maxresdefault.jpg",
+        "uploadDate": "2025-12-03T00:00:00+05:30",
+        "duration": "PT1M30S",
+        "contentUrl": "https://youtu.be/5J5ck--j1RI",
+        "embedUrl": "https://www.youtube.com/embed/5J5ck--j1RI",
+        "publisher": {
+          "@type": "Person",
+          "name": "Gulzar Hussain"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://apps.uol.ac.in/#website",
+        "url": "https://apps.uol.ac.in/",
+        "name": "Excel Record Viewer",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://apps.uol.ac.in/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
   }
   </script>
+
+  <!-- Simple favicon -->
+  <link rel="icon" href="https://apps.uol.ac.in/assets/icons/favicon-32x32.png" sizes="32x32" />
 </head>
-<body style="font-family:sans-serif; max-width:700px; margin:auto; padding:20px;">
-  <h1>Excel Record Viewer</h1>
-  <p>Open • Edit • Add • Export — All in your browser. No uploads.</p>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="left">
+        <h1>Make messy sheets usable — instantly.</h1>
+        <p class="lead">
+          View, edit and export Excel & CSV files right in your browser. No uploads, privacy-first, works offline as a PWA.
+        </p>
 
-  <p><a href="https://apps.uol.ac.in" style="font-size:20px;">👉 Open the App</a></p>
+        <div class="cta">
+          <a class="btn primary" href="https://apps.uol.ac.in/">Open App (No Upload)</a>
+          <a class="btn ghost" href="https://gulzarhussaindev.github.io/excel-record-viewer-docs/">Docs & Examples</a>
+        </div>
 
-  <h2>Promo Video</h2>
-  <iframe width="100%" height="315" src="https://www.youtube.com/embed/5J5ck--j1RI" frameborder="0" allowfullscreen></iframe>
+        <ul class="features">
+          <li>Form view — view messy rows as readable records</li>
+          <li>Inline edit & add records</li>
+          <li>Choose visible columns & export XLSX/CSV</li>
+          <li>Client-side only — files never leave your device</li>
+        </ul>
+      </div>
 
-  <h2>Features</h2>
-  <ul>
-    <li>Form view for messy sheets</li>
-    <li>Inline editing</li>
-    <li>Add records</li>
-    <li>Filter & search</li>
-    <li>Export XLSX/CSV</li>
-    <li>Works offline</li>
-  </ul>
+      <div class="right">
+        <!-- Illustration placeholder — replace with exported SVG/PNG -->
+        <div class="card visual">
+          <img alt="Compare messy sheet vs form view" src="assets/hero-illustration.png" />
+          <figcaption>Messy sheet → Clean form view</figcaption>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  <p>Developed by <strong>Gulzar Hussain</strong></p>
+  <main class="content wrap">
+    <section class="showcase">
+      <div class="grid">
+        <div class="media">
+          <!-- Video embed (YouTube) -->
+          <div class="video-wrap">
+            <iframe title="Excel Record Viewer demo" width="560" height="315"
+              src="https://www.youtube.com/embed/5J5ck--j1RI"
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text">
+          <h2>Quick demo — from messy to meaningful</h2>
+          <p>Short walkthrough of switching from raw spreadsheet to a readable form, editing fields, and exporting changes.</p>
+          <a class="btn secondary" href="https://apps.uol.ac.in/">Try It — Open Your File</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <h3>Why people use Excel Record Viewer</h3>
+      <div class="cards">
+        <article class="card-sm">
+          <h4>Privacy-first</h4>
+          <p>All processing happens in the browser — we never upload your data.</p>
+        </article>
+        <article class="card-sm">
+          <h4>Works offline</h4>
+          <p>Install as PWA and use without network access.</p>
+        </article>
+        <article class="card-sm">
+          <h4>Fast & simple</h4>
+          <p>Drag & drop, choose fields to display, edit inline, export — no learning curve.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="howto">
+      <h3>Get started in 3 steps</h3>
+      <ol>
+        <li>Open the app and pick your Excel/CSV file</li>
+        <li>Switch to Form view to inspect rows quickly</li>
+        <li>Edit or add records and export updated file</li>
+      </ol>
+      <p class="note">Tip: Use the Columns selector to hide irrelevant fields before exporting.</p>
+    </section>
+
+    <section class="seo-block">
+      <h4>Documentation & Download</h4>
+      <p>Full documentation, changelog, and example files available on the docs site.</p>
+      <a class="btn ghost" href="https://gulzarhussaindev.github.io/excel-record-viewer-docs/">Open docs</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="left">
+        <p>© 2025 Excel Record Viewer — Developed by <a href="mailto:gulzarhussain@uol.ac.in">Gulzar Hussain</a></p>
+      </div>
+      <div class="right">
+        <nav>
+          <a href="about.html">About</a> ·
+          <a href="privacy.html">Privacy</a> ·
+          <a href="terms.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional lightweight GA event snippet (non-breaking) -->
+  <script>
+    // small safety: only send if gtag exists
+    function gaEvent(name, params) {
+      try { if (window.gtag) gtag('event', name, params); } catch (e) {}
+    }
+  </script>
 </body>
 </html>
