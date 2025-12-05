@@ -3,11 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
   <title>Excel Record Viewer — Fast, Offline Excel & CSV Viewer (No Upload)</title>
   <meta name="description"
     content="Excel Record Viewer: open, edit and export Excel / CSV files fully in your browser. Fast form view, table view, inline editing — 100% client-side. No uploads." />
   <meta name="keywords" content="Excel viewer, CSV viewer, XLSX viewer, offline excel, client-side excel" />
-  
+
+  <!-- Correct canonical -->
+  <link rel="canonical" href="https://apps.uol.ac.in/" />
+
+  <!-- Allow Google indexing -->
+  <meta name="robots" content="index, follow">
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website"/>
@@ -17,11 +23,11 @@
   <meta property="og:url" content="https://apps.uol.ac.in/"/>
   <meta name="twitter:card" content="summary_large_image"/>
 
-  <!-- Preconnect + preload -->
+  <!-- Preconnect + stylesheet -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="style.css">
 
-  <!-- Structured data: SoftwareApplication + VideoObject + WebSite -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -34,10 +40,7 @@
         "url": "https://apps.uol.ac.in/",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
-        "author": {
-          "@type": "Person",
-          "name": "Gulzar Hussain"
-        }
+        "author": { "@type": "Person", "name": "Gulzar Hussain" }
       },
       {
         "@type": "VideoObject",
@@ -49,10 +52,7 @@
         "duration": "PT1M30S",
         "contentUrl": "https://youtu.be/5J5ck--j1RI",
         "embedUrl": "https://www.youtube.com/embed/5J5ck--j1RI",
-        "publisher": {
-          "@type": "Person",
-          "name": "Gulzar Hussain"
-        }
+        "publisher": { "@type": "Person", "name": "Gulzar Hussain" }
       },
       {
         "@type": "WebSite",
@@ -69,13 +69,12 @@
   }
   </script>
 
-  <!-- Simple favicon -->
+  <!-- Favicon -->
   <link rel="icon" href="https://apps.uol.ac.in/assets/icons/favicon-32x32.png" sizes="32x32" />
-  
-<link rel="canonical" href="https://apps.uol.ac.in/">
 
 </head>
 <body>
+
   <header class="hero">
     <div class="wrap">
       <div class="left">
@@ -98,9 +97,14 @@
       </div>
 
       <div class="right">
-        <!-- Illustration placeholder — replace with exported SVG/PNG -->
         <div class="card visual">
-          <img alt="Compare messy sheet vs form view" src="https://gulzarhussaindev.github.io/excel-record-viewer-docs/hero-illustration.png" />
+          <img
+            loading="lazy"
+            width="600"
+            height="400"
+            alt="Compare messy sheet vs form view"
+            src="https://gulzarhussaindev.github.io/excel-record-viewer-docs/hero-illustration.png"
+          />
           <figcaption>Messy sheet → Clean form view</figcaption>
         </div>
       </div>
@@ -108,17 +112,18 @@
   </header>
 
   <main class="content wrap">
+
     <section class="showcase">
       <div class="grid">
         <div class="media">
-          <!-- Video embed (YouTube) -->
           <div class="video-wrap">
             <iframe title="Excel Record Viewer demo" width="560" height="315"
               src="https://www.youtube.com/embed/5J5ck--j1RI"
-              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              loading="lazy"
               allowfullscreen></iframe>
           </div>
         </div>
+
         <div class="text">
           <h2>Quick demo — from messy to meaningful</h2>
           <p>Short walkthrough of switching from raw spreadsheet to a readable form, editing fields, and exporting changes.</p>
@@ -160,6 +165,7 @@
       <p>Full documentation, changelog, and example files available on the docs site.</p>
       <a class="btn ghost" href="https://gulzarhussaindev.github.io/excel-record-viewer-docs/">Open docs</a>
     </section>
+
   </main>
 
   <footer class="footer">
@@ -177,12 +183,5 @@
     </div>
   </footer>
 
-  <!-- Optional lightweight GA event snippet (non-breaking) -->
-  <script>
-    // small safety: only send if gtag exists
-    function gaEvent(name, params) {
-      try { if (window.gtag) gtag('event', name, params); } catch (e) {}
-    }
-  </script>
 </body>
 </html>
