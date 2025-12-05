@@ -9,10 +9,7 @@
     content="Excel Record Viewer: open, edit and export Excel / CSV files fully in your browser. Fast form view, table view, inline editing — 100% client-side. No uploads." />
   <meta name="keywords" content="Excel viewer, CSV viewer, XLSX viewer, offline excel, client-side excel" />
 
-  <!-- Correct canonical -->
   <link rel="canonical" href="https://apps.uol.ac.in/" />
-
-  <!-- Allow Google indexing -->
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph / Twitter -->
@@ -23,7 +20,6 @@
   <meta property="og:url" content="https://apps.uol.ac.in/"/>
   <meta name="twitter:card" content="summary_large_image"/>
 
-  <!-- Preconnect + stylesheet -->
   <link rel="stylesheet" href="style.css">
 
   <!-- Structured Data -->
@@ -68,8 +64,34 @@
   }
   </script>
 
-  <!-- Favicon -->
   <link rel="icon" href="https://apps.uol.ac.in/assets/icons/favicon-32x32.png" sizes="32x32" />
+
+  <!-- Lite YouTube CSS -->
+  <style>
+    .lite-yt {
+      position: relative;
+      width: 100%;
+      max-width: 560px;
+      cursor: pointer;
+      background: #000;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .lite-yt img {
+      width: 100%;
+      display: block;
+    }
+    .lite-yt .play {
+      width: 70px;
+      height: 50px;
+      background: url("https://www.gstatic.com/youtube/img/branding/youtube_icon_white.png") no-repeat center;
+      background-size: contain;
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.9;
+    }
+  </style>
 
 </head>
 <body>
@@ -105,7 +127,6 @@
               alt="Compare messy sheet vs form view"
               src="https://gulzarhussaindev.github.io/excel-record-viewer-docs/hero-illustration.webp"
             />
-
           <figcaption>Messy sheet → Clean form view</figcaption>
         </div>
       </div>
@@ -117,12 +138,14 @@
     <section class="showcase">
       <div class="grid">
         <div class="media">
-          <div class="video-wrap">
-            <iframe title="Excel Record Viewer demo" width="560" height="315"
-              src="https://www.youtube.com/embed/5J5ck--j1RI"
-              loading="lazy"
-              allowfullscreen></iframe>
+
+          <!-- LITE YOUTUBE EMBED START -->
+          <div class="lite-yt" onclick="loadYT(this)">
+            <img src="https://i.ytimg.com/vi/5J5ck--j1RI/hqdefault.jpg" alt="Demo Video Thumbnail">
+            <div class="play"></div>
           </div>
+          <!-- LITE YOUTUBE EMBED END -->
+
         </div>
 
         <div class="text">
@@ -166,7 +189,6 @@
       <p>Full documentation, changelog, and example files available on the docs site.</p>
       <a class="btn ghost" href="https://gulzarhussaindev.github.io/excel-record-viewer-docs/">Open docs</a>
     </section>
-
   </main>
 
   <footer class="footer">
@@ -183,6 +205,14 @@
       </div>
     </div>
   </footer>
+
+  <!-- Lite YouTube loader -->
+  <script>
+    function loadYT(el) {
+      el.innerHTML =
+        '<iframe width="560" height="315" src="https://www.youtube.com/embed/5J5ck--j1RI?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    }
+  </script>
 
 </body>
 </html>
